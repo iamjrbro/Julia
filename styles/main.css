@@ -99,21 +99,6 @@ body {
   width: 60%;
 }
 
-.footer {
-  font-family: var(--font);
-  font-size: 0.75rem;
-  color: var(--white);
-  /* background-color: var(--pink); */
-  padding: 0.75rem;
-  text-align: left;
-}
-
-.footer__img {
-  width: 1.4%;
-  margin: 0.2%;
-  gap: 6%;
-  padding: 0.1%;
-}
 
 /*FORMAÇÃO*/
 
@@ -195,8 +180,26 @@ body {
   }
 }
 
-/*FOOTER
+/*FOOTER*/
 
+.footer {
+  font-family: var(--font);
+  font-size: 0.75rem;
+  color: var(--white);
+  /* background-color: var(--pink); */
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.footer__img {
+  width: 1%;
+  margin: 0.2%;
+  gap: 6%;
+  padding: 0.1%;
+}
+
+
+/*
 .footer {
   font-family: var(--font);
   font-size: 0.75rem;
