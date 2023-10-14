@@ -97,6 +97,10 @@ body {
 
 .error_img {
   width: 60%;
+  /*float: right;
+  clear: right;*/
+  margin-left: auto;
+  display: block;
 }
 
 
