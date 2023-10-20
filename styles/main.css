@@ -128,6 +128,19 @@ body {
   font-family: var(--font);
 }
 
+/*IDIOMAS*/
+.presentation__content__third__title{
+  font-size: 1.8rem;
+  font-family: var(--font);
+  width: 100%;
+  color: var(--pink);
+}
+.presentation__content__paragraph__third__list{
+  font-size: 1rem;
+  font-family: var(--font);
+}
+
+
 @media (max-width: 1200px) {
   .header {
     padding: 6%;
@@ -148,6 +161,8 @@ body {
   .presentation {
     flex-direction: column-reverse;
   }
+
+
 }
 
 @media (max-width: 768px) {
@@ -182,7 +197,20 @@ body {
   .error_img {
     width: 100%;
   }
+
+  .presentation__content__third__title{
+    font-size: 2rem;
+    font-family: var(--font);
+    width: 100%;
+    color: var(--pink);
+  }
+  .presentation__content__paragraph__third__list{
+    font-size: 1.2rem;
+    font-family: var(--font);
+  }
 }
+
+
 
 /*FOOTER*/
 
@@ -201,6 +229,7 @@ body {
   gap: 6%;
   padding: 0.1%;
 }
+
 
 
 /*
