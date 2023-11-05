@@ -210,20 +210,26 @@ body {
   }
 }
 
-
+.footer_contact{
+  padding: 8% 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px; 
+}
 
 /*FOOTER*/
 
-.footer {
+/*.footer_contact {
   font-family: var(--font);
   font-size: 0.75rem;
   color: var(--letters);
   /* background-color: var(--pink); */
-  padding: 0.75rem;
+  /*padding: 0.75rem;
   text-align: left;
 }
 
-.footer__img {
+.footer_contact{
   width: 1%;
   margin: 0.2%;
   gap: 6%;
