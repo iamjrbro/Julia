@@ -7,9 +7,14 @@
 /*PROJECT COLORS*/
 
 :root {
-  --letters: #ffffff;
+ /* --letters: #ffffff;
   --highlight_letter: #b2068a;
   --black: #000000;
+  --color-hover: #181717;*/
+
+  --letters: #ffffff;
+  --highlight_letter: #000000;
+  --black: #0b4fa2;
   --color-hover: #181717;
 
   --font: "Open Sans", sans-serif;
@@ -92,11 +97,11 @@ body {
 
 /*IMAGES*/
 .presentation__content__image {
-  width: 40%;
+  width: 20%;
 }
 
-.error_img {
-  width: 60%;
+.add_img {
+  width: 36%;
   /*float: right;
   clear: right;*/
   margin-left: auto;
