@@ -1,73 +1,293 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julia Ribeiro</title>
-    <link rel="stylesheet" href="styles/main.css">
-    
-</head>
-<body>
-    <header class="header">
+@import url(reset.css);
 
-    </header>
-    <main class="presentation">
-        <section class="presentation__content">
-                <h1 class="presentation__content__title">Olá!<strong class="highlightTitle">Bem vindo(a)!</strong></h1>
-                <p class="presentation__content__paragraph""></p>  
-        </section>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
-        <!--<p class="content">Me chamo Julia, tenho 20 anos. Sou acadêmica de Análise e Desenvolvimento de Sistemas e atuo como Analista. <br> Atualmente, venho focando meus estudos em Desenvolvimento Web. <br> Ademais, possuo conhecimento nas plataformas de infra da Microsoft, LGPD, Gestão de T.I e Metodologias Ágeis.
-        </p>-->
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
-        <p class="content">Acadêmica de Análise e Desenvolvimento de Sistemas & Computação em Nuvem | Analista de Infraestrutura e Cloud Junior | Certificada Microsoft - AZ900 & AI900
-        </p>
+/*PROJECT COLORS*/
 
-        <img src="assets/profile/profile.jpg" alt="Foto de perfil Julia" 
-        class="presentation__content__image">
-        
-    </main>
+:root {
+ /* --letters: #ffffff;
+  --highlight_letter: #b2068a;
+  --black: #000000;
+  --color-hover: #181717;*/
 
-        <!--<img src="assets/profile/error.jpg" alt="error" class="error_img"> -->
-         <img src="assets/profile/cloud.jpg" alt="cloud" class="add_img">
+  --letters: #ffffff;
+  --highlight_letter: #000000;
+  --black: #0b4fa2;
+  --color-hover: #181717;
+
+  --font: "Open Sans", sans-serif;
+}
+
+/* MAIN PAGE */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* height: 100hv; */
+  background-color: var(--black);
+  box-sizing: border-box;
+  color: var(--letters);
+}
+
+.header {
+  padding: 0.5rem 0rem 0rem 14rem; /*espaçamento dos header (4 valores, na ordem: cima pra baixo, direita para esquerda, inferior e esquerda*/
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem; /*distanciamento entre os headers*/
+}
+
+.header__menu__link {
+  color: var(--letters);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--font);
+  text-decoration: none; /*remove sublinhado de link*/
+}
+
+.highlightTitle {
+  color: var(--highlight_letter);
+}
+
+.presentation {
+  padding: 8% 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px; /*o gap aqui irá garantir que a imagem e o conteudo não grudem na responsividade*/
+}
+
+.presentation__content {
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.presentation__content__title {
+  font-size: 2.5rem;
+  font-family: var(--font);
+  display: flex;
+  flex-direction: column;
+
+  width: 200%;
+}
+
+.presentation__content__paragraph {
+  font-size: 1.5rem;
+  font-family: var(--font);
+}
+
+.content {
+  font-size: 1.1rem;
+  font-family: var(--font);
+}
+
+.presentation__content__links___button:hover {
+  background-color: var(
+    --color-hover
+  ); /*hover da alteração de cor quando passamos o mouse por cima do botão */
+}
+
+/*IMAGES*/
+.presentation__content__image {
+  width: 20%;
+}
+
+.add_img {
+  width: 28%;
+  /*float: right;
+  clear: right;*/
+  margin-left: auto;
+  display: block;
+}
 
 
-    <main class="presentation">
-        <section class="presentation__content">
+/*FORMAÇÃO*/
 
-                <h1 class="presentation__content__formation__title">Formação</h1
+.presentation__content__formation__title {
+  font-size: 1.8rem;
+  font-family: var(--font);
+  color: var(--highlight_letter);
+}
 
-                <p class="presentation__content__paragraph">
-                    <ul class="presentation__content__paragraph__list">
-                       <li>Análise de Desenvolvimento de Sistemas - UniDomBosco</li>
-                       <li>Computação em Nuvem - Anhanguera</li>
-                    </ul>
-                </p> 
-</main>
+.presentation__content__paragraph__list {
+  font-size: 1rem;
+  font-family: var(--font);
+}
 
-    
-<main class="linkedin"  <link rel="stylesheet" href="https://www.linkedin.com/in/juliaoribeiro/ "></main>
+.presentation__content__second__title {
+  font-size: 1.8rem;
+  font-family: var(--font);
+  color: var(--highlight_letter);
+}
 
-              <!--   <h1 class="presentation__content__second__title">Tecnologias</h1>
-                <ul class="presentation__content__paragraph__second__list">
-                        <li>JavaScript, Node</li>
-                        <li>Cloud - Microsoft, AWS, Google </li>
-                </ul>
+.presentation__content__paragraph__second__list {
+  font-size: 1rem;
+  font-family: var(--font);
+  
+}
 
-        </main>    -->    
-        
+.linkedin{
+  font-size: 2rem;
+  font-family: var(--font);
+  width: 100%;
+  color: var(--pink);
+}
 
-    
-   <!-- <footer class="footer">
-        <a class="presentation__content__links__footer" href="https://github.com/iamjrbro"><img src="assets/sociais/github.png" alt="GitHub acess URL link" class="footer__img" ></a>
-        <a class="presentation__content__links__footer" href="https://www.linkedin.com/in/juliaoribeiro/"><img src="assets/sociais/linkedin.png" alt="LinkedIn acess URL link" class="footer__img"></a>
-        <a class="presentation__content__links__footer" href="https://www.instagram.com/studinwju/"> <img src="assets/sociais/instagram.png" alt="Instagram acess URL link" class="footer__img" ></a>
-            <a class="presentation__content__links__footer" href="https://linktr.ee/iamjrbro?utm_source=linktree_profile_share&ltsid=f3ef04d5-44bd-4437-ad11-2aefc355e4f2">
-                <img src="assets/sociais/link-quebrado.png" alt="LinkTree acess URL link" class="footer__img" ></a>
-    </div>
-    </footer> -->
-</body>
-</html>
 
+/*IDIOMAS*/
+.presentation__content__third__title{
+  font-size: 1.8rem;
+  font-family: var(--font);
+  width: 100%;
+  color: var(--pink);
+}
+.presentation__content__paragraph__third__list{
+  font-size: 1rem;
+  font-family: var(--font);
+}
+
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 6%;
+  }
+
+  .header__menu {
+    justify-content: center;
+  }
+
+  .header__menu__link {
+    color: var(--letters);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font);
+    text-decoration: none; /*remove sublinhado de link*/
+  }
+
+  .presentation {
+    flex-direction: column-reverse;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10% 6%;
+  }
+
+  .header__menu {
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .presentation {
+    padding: 10% 6%;
+    flex-direction: column;
+  }
+
+  .presentation__content {
+    width: 100%;
+  }
+
+  .presentation__content__title {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .presentation__content__paragraph {
+    font-size: 1.2rem;
+  }
+
+  .presentation__content__image,
+  .error_img {
+    width: 100%;
+  }
+
+  .presentation__content__third__title{
+    font-size: 2rem;
+    font-family: var(--font);
+    width: 100%;
+    color: var(--pink);
+  }
+  .presentation__content__paragraph__third__list{
+    font-size: 1.2rem;
+    font-family: var(--font);
+  }
+  
+}
+
+.footer_contact{
+  padding: 8% 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px; 
+}
+
+
+
+
+/*FOOTER*/
+
+/*.footer_contact {
+  font-family: var(--font);
+  font-size: 0.75rem;
+  color: var(--letters);
+  /* background-color: var(--pink); */
+  /*padding: 0.75rem;
+  text-align: left;
+}
+
+.footer_contact{
+  width: 1%;
+  margin: 0.2%;
+  gap: 6%;
+  padding: 0.1%;
+}
+
+
+
+/*
+.footer {
+  font-family: var(--font);
+  font-size: 0.75rem;
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer__img {
+  width: 20%;
+  margin: 1rem 0;
+  padding: 0.2%;
+}
+
+@media (max-width: 390px) {
+  .footer {
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 767px) {
+  .footer {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .footer {
+    font-size: 0.75rem;
+  }
+}
+*/
 
 
